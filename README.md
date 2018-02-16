@@ -2,7 +2,7 @@
 
 ## Description
 
-An example how to use google testing framework, one of the most popular framework for unit test C++ projects.
+This project is an example how to use google testing framework, one of the most popular framework for unit test C++ projects.
 
 As usual, cmake is used for build generation. The google test (or just gtest) library github repository is cloned in build time.
 
@@ -32,17 +32,26 @@ make
 
 In the first time ```make``` is called, gtest is cloned/build from its repository on github. cmake/make do it for you without actually install gtest in your system. Just the required files are stored into build/libs folder. 
 
-If you didn't want to build the test artifacts just call
+It is pretty desirable to control when your build for testing purpose or release. If you didn't want to build the test artifacts just call
 
 ```cmake ..```
 
-instead of 
-
-```cmake -DBUILD_TESTS=ON ..```
+instead of ```cmake -DBUILD_TESTS=ON ..```. Optionally you can run cmake as follow ```cmake -DBUILD_TESTS=OFF ..```
 
 ## running test and other stuff
 
-After build, you
+If you decided build with -DBUILD_TESTS=ON you have two options to run the tests:
+
+### using make test
+
+Is just it, call ```make test``` and let make run the tests. The output is really poor. Just says if the tests passed or not.
+
+### Running the tests like a regular cpp aplication
+
+The tests are build into a single executable called "basic_googletest_example_test". Thus, if you like to see a bit more informations about the test execution, just type:
+
+cd build
+./basic_googletest_example_test
 
 ## Requirements
 
