@@ -21,12 +21,14 @@ Instead of perform a long jorney along all gtest features, this spike is focused
 
 The truth is in the commands:
 
-```git clone https://github.com/doleron/basic-googletest-example.git
+```
+git clone https://github.com/doleron/basic-googletest-example.git
 cd basic-googletest-example
 mkdir build
 cd build
 cmake -DBUILD_TESTS=ON ..
-make```
+make
+```
 
 In the first time ```make``` is called, gtest is cloned/build from its repository on github. cmake/make do it for you without actually install gtest in your system. Just the required files are stored into build/libs folder. 
 
