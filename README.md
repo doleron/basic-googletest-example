@@ -44,7 +44,7 @@ If you decided build with -DBUILD_TESTS=ON you have two options to run the tests
 
 ### using make test
 
-Is just it, call ```make test``` and let make run the tests. The output is really poor. Just says if the tests passed or not.
+That's it, just call ```make test``` and let make run the tests. The output isn't that so detailed. Just says if the tests passed or not.
 
 ### Running the tests like a regular cpp aplication
 
