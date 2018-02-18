@@ -12,7 +12,7 @@ Some features applied in this example:
 - Parametized build for test/non test
 - Several .cpp test files
 - Different directories for src and test
-- std::future tasks for timeout checking
+- std::promise tasks for timeout checking
 - Exception thrown assertion
 
 Instead of perform a long jorney along all gtest features, this spike is focused into how to build your project with cmake/gtest. It is strongly recommended to read the Google Testing Premier at https://github.com/google/googletest/blob/master/googletest/docs/Primer.md
